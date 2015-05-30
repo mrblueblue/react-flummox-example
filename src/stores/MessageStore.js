@@ -9,7 +9,7 @@ export class MessageStore extends Store {
     this.register(messageActionIds.createMessage, this.handleNewMessage);
 
     this.state = {
-      messages: ['hello', 'goodbye'],
+      messages: [],
     };
   }
 

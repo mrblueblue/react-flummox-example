@@ -1,6 +1,7 @@
 import React from 'react';
 import FluxComponent from 'flummox/component';
 import {MessageList} from './MessageList';
+import {MessageInput} from './MessageInput';
 
 export class MessagesView extends React.Component {
 
@@ -10,10 +11,10 @@ export class MessagesView extends React.Component {
         connectToStores={'messages'}
         flux={this.props.flux}
       >
-        <MessageList />
+        <MessageInput/>
+        <MessageList/>
       </FluxComponent>
    
     );
   }
-
 }
